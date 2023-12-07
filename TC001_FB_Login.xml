@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_login">
+  <test thread-count="5" name="Test_FB_login_chrome">
+	  
+	  <parameter name="browser" value="chrome"></parameter>
+	     <classes>
+      <class name="com.facebook.testcases.TC001_fb_logon"/>
+    </classes>
+  </test> <!-- Test_FB_login -->
+  
+  <test thread-count="5" name="Test_FB_login_edge">
+	  
+	  <parameter name="browser" value="edge"></parameter>
+	     <classes>
+      <class name="com.facebook.testcases.TC001_fb_logon"/>
+    </classes>
+  </test> <!-- Test_FB_login -->
+  
+  
+  
+  
+</suite> <!-- Suite_login -->
